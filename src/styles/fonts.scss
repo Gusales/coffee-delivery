@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Baloo2-bold';
+  src: url('./fonts/baloo-2/Baloo2-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baloo2-extrabold';
+  src: url('./fonts/baloo-2/Baloo2-ExtraBold.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$font-baloo2-bold: 'Baloo2-bold';
+$font-baloo2-extrabold: 'Baloo2-extrabold';
+$font-roboto: 'Roboto', sans-serif;
