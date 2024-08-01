@@ -1,28 +1,13 @@
-import { Coffee, MapPin, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 
-import Logo from './assets/logo.svg'
 import CoffeeCoup from './assets/coffee-coup.png'
 import Placeholder from './assets/placeholder.jpg'
+import { Header } from './components/header'
 
 export function App() {
   return (
-    <>
-      <header>
-        <figure>
-          <img src={Logo} alt="Logotipo da Coffee Delivery" />
-        </figure>
-
-        <div>
-          <div>
-            <MapPin weight="fill" />
-            <p>Carapicuíba, SP</p>
-          </div>
-
-          <button>
-            <ShoppingCart weight="fill" />
-          </button>
-        </div>
-      </header>
+    <div className="wrapper">
+      <Header />
 
       <section>
         <div>
@@ -105,6 +90,6 @@ export function App() {
           </article>
         </section>
       </main>
-    </>
+    </div>
   )
 }
