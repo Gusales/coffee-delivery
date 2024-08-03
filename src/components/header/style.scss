@@ -1,11 +1,17 @@
 @import '../../styles/colors.scss';
 
 .header__container {
-  width: 100%;
+  width: 80vw;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $background;
 
   padding: 2rem 0;
 }
@@ -51,5 +57,11 @@
   &:hover {
     background-color: $yellow-dark;
     color: $white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    width: 100%;
   }
 }
