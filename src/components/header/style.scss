@@ -1,19 +1,28 @@
 @import '../../styles/colors.scss';
 
 .header__container {
-  width: 80vw;
+  width: 100%;
+  padding: 2rem 0;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 
   position: fixed;
   top: 0;
   left: 50%;
+
   transform: translateX(-50%);
   background: $background;
 
-  padding: 2rem 0;
+  header {
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }
 
 .header__actions {
