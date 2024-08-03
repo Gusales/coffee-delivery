@@ -27,3 +27,23 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+h1,
+h2 {
+  font-family: $font-baloo2-extrabold;
+  line-height: 130%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-family: $font-baloo2-bold;
+  font-size: 18px;
+  line-height: 130%;
+}
