@@ -1,9 +1,12 @@
 .wrapper {
-  width: 80%;
+  min-width: 80vw;
+  max-width: 80vw;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
   .wrapper {
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
