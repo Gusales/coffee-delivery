@@ -2,11 +2,14 @@ import { ShoppingCart } from '@phosphor-icons/react'
 
 import Placeholder from './assets/placeholder.jpg'
 import { Header } from './components/header'
+import { Hero } from './components/hero'
 
 export function App() {
   return (
-    <div className="wrapper">
+    <>
       <Header />
+
+      <Hero />
 
       <main>
         <h2>Nossos cafés</h2>
@@ -41,6 +44,6 @@ export function App() {
           </article>
         </section>
       </main>
-    </div>
+    </>
   )
 }
