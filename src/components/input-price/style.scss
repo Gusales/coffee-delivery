@@ -1,0 +1,38 @@
+@import '../../styles/globals.scss';
+
+.input_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .25rem;
+
+  background: $base-button;
+  border-radius: 6px;
+  padding: .5rem;
+}
+
+.input_text {
+  display: block;
+  text-align: center;
+}
+
+.input_button {
+  line-height: 0;
+  background: transparent;
+  color: $purple;
+}
+
+.input_field {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+
+  ::placeholder {
+    text-align: center;
+  }
+}

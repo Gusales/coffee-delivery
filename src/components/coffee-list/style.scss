@@ -1,0 +1,43 @@
+@import '../../styles/globals.scss';
+
+.coffee_list_container {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  main {
+    width: 80%;
+    padding: 2rem 0;
+  }
+
+}
+
+.coffee_list {
+  margin-top: 3.375rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  list-style: none;
+}
+
+@media screen and (max-width: 570px) {
+  .coffee_list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .coffee_list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+  .coffee_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
